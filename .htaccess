@@ -207,8 +207,3 @@
 ## http://developer.yahoo.com/performance/rules.html#etags
 
     #FileETag none
-
-#AuthUserFile /home/celebes4/public_html/magento/.htpasswd
-#AuthType Basic
-#AuthName "celebes4"
-#Require valid-user
