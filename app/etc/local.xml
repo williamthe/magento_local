@@ -63,4 +63,25 @@
             </adminhtml>
         </routers>
      </admin>
+	 <websites>
+        <admin>
+            <dev>
+                <debug>
+                    <template_hints>0</template_hints>
+                    <template_hints_blocks>0</template_hints_blocks>
+                </debug>
+            </dev>
+        </admin>
+    </websites>
+	<websites>
+        <base>
+            <dev>
+                <debug>
+                    <template_hints>0</template_hints>
+                    <template_hints_blocks>0</template_hints_blocks>
+                </debug>
+            </dev>
+        </base>
+    </websites>
 </config>
+

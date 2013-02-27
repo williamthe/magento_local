@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<layout>
+	<default>
+	<remove name="return_link"/>
+	<remove name="newsletter"/>
+	</default>
+</layout>
