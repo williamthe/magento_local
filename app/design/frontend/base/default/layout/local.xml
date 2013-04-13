@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<layout>
+	<default>
+		<remove name="return_link" />
+		<remove name="newsletter" />
+		<remove name="checkout.cart.coupon" />
+		<remove name="checkout.cart.shipping" />
+		<remove name="checkout.cart.crosssell" />
+		<reference name="head">
+			<action method="addJs"><script>celebes/local.js</script></action> 
+			<action method="addCss"><script>css/local.css</script></action>
+		</reference>
+	</default>
+</layout>
