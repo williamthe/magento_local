@@ -1,0 +1,9 @@
+<?xml version = "1.0"?>
+   <config>
+      <modules>
+        <Celebes_CityList>
+            <active>true</active>
+            <codePool>local</codePool>
+         </Celebes_CityList>
+       </modules>
+    </config>
