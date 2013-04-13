@@ -345,11 +345,13 @@ Billing.prototype = {
         if (response.error){
             if ((typeof response.message) == 'string') {
                 alert(response.message);
-            } else {
+            } else {billingRegionUpdater
                 if (window.billingRegionUpdater) {
                     billingRegionUpdater.update();
                 }
-
+				if (window.billingCityUpdater) {
+                    billingCityUpdater.update();
+                }
                 alert(response.message.join("\n"));
             }
 
@@ -461,6 +463,7 @@ Shipping.prototype = {
             shippingRegionUpdater.update();
             $('shipping:region_id').value = $('billing:region_id').value;
             $('shipping:region').value = $('billing:region').value;
+			shippingCityUpdater.update();
             //shippingForm.elementChildLoad($('shipping:country_id'), this.setRegionValue.bind(this));
         } else {
             $('shipping-address-select').value = $('billing-address-select').value;
@@ -508,6 +511,9 @@ Shipping.prototype = {
             } else {
                 if (window.shippingRegionUpdater) {
                     shippingRegionUpdater.update();
+                }
+				if (window.shippingCityUpdater) {
+                    shippingCityUpdater.update();
                 }
                 alert(response.message.join("\n"));
             }
