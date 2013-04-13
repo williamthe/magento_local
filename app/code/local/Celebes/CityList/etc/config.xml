@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+  <config>
+     <modules>
+        <Celebes_CityList>
+          <version>1.0.0</version>
+        </Celebes_CityList>
+     </modules>
+     <frontend>
+       <routers>
+          <CityList>
+              <use>standard</use>
+              <args>
+                 <module>Celebes_CityList</module>
+                 <frontName>CityList</frontName>
+              </args>
+           </CityList>		  
+       </routers>
+	   <layout>
+		<updates>
+			<CityList>
+				<file>citylist.xml</file>
+			</CityList>
+		</updates>
+	   </layout>
+    </frontend>
+	
+	<global>
+		<blocks>
+			<CityList>
+				<class>Celebes_CityList_Block</class>
+			</CityList>
+		</blocks>
+		<models>
+			<CityList>
+				<class>Celebes_CityList_Model</class>
+				<resourceModel>CityList_mysql4</resourceModel>
+			</CityList>
+			<CityList_mysql4>
+				<class>Celebes_CityList_Model_Mysql4</class>
+				<entities>
+					<City>
+						<table>directory_country_region_city</table>
+					</City>
+				</entities>
+			</CityList_mysql4>
+		</models>
+		<!-- allow the plugin to read and write -->
+		<resources>
+				<!-- connection to write -->
+				<test_write>
+					<connection>
+						<use>core_write</use>
+					</connection>
+				</test_write>
+				<!-- connection to read -->
+			   <test_read>
+				  <connection>
+					 <use>core_read</use>
+				  </connection>
+			   </test_read>
+		</resources>
+		<helpers>
+			<CityList>
+				<class>Celebes_CityList_Helper</class>
+			</CityList>
+		</helpers>
+   </global>
+	
+</config>
