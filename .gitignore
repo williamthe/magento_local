@@ -165,8 +165,7 @@ pip-log.txt
 
 #Celebes Projects
 .modgit/
-app/code/community/Find/
-app/code/community/Phoenix/
+app/code/community/
 app/code/core/
 app/etc/modules/Enterprise_*
 app/etc/modules/Find_Feed.xml
