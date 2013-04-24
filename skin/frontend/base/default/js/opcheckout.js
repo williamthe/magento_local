@@ -345,7 +345,7 @@ Billing.prototype = {
         if (response.error){
             if ((typeof response.message) == 'string') {
                 alert(response.message);
-            } else {billingRegionUpdater
+            } else {
                 if (window.billingRegionUpdater) {
                     billingRegionUpdater.update();
                 }

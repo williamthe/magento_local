@@ -64,6 +64,13 @@
 				<class>Celebes_CityList_Helper</class>
 			</CityList>
 		</helpers>
+		<blocks>
+			<adminhtml>
+				<rewrite>
+					<media_uploader>Celebes_CityList_Block_Overwrite_UploaderOverwrite</media_uploader>
+				</rewrite>
+			</adminhtml>
+		</blocks>
    </global>
 	
 </config>

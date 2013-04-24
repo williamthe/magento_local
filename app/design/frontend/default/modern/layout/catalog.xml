@@ -52,9 +52,6 @@ Default layout, loads most of the pages
                 <action method="setLinkUrl"><url>checkout/cart</url></action>
             </block-->
             <block type="catalog/product_compare_sidebar" before="cart_sidebar" name="catalog.compare.sidebar" template="catalog/product/compare/sidebar.phtml"/>
-			<block type="cms/block" name="fbfanbox">
-				<action method="setBlockId"><block_id>fbfanbox</block_id></action> 
-			</block>
 		</reference>
         <reference name="footer_links">
             <action method="addLink" translate="label title" module="catalog" ifconfig="catalog/seo/site_map"><label>Site Map</label><url helper="catalog/map/getCategoryUrl" /><title>Site Map</title></action>

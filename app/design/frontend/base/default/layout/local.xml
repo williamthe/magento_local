@@ -10,5 +10,10 @@
 			<action method="addJs"><script>celebes/local.js</script></action> 
 			<action method="addCss"><script>css/local.css</script></action>
 		</reference>
+		<reference name="left">
+			<block type="cms/block" name="fbfanbox">
+				<action method="setBlockId"><block_id>fbfanbox</block_id></action> 
+			</block>
+		</reference>
 	</default>
 </layout>
